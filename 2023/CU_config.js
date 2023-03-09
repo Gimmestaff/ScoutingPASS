@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022carv",
+      "defaultValue": "2023NCWAK",
       "required": "true",
       "disabled": "true"
     },
@@ -22,11 +22,11 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "qm": "Quals<br>",
-        "de": "Double Elimination<br>",
-        "f": "Finals"
+        "quals": "Quals<br>",
+        "double": "Double Elimination<br>",
+        "finals": "Finals"
       },
-      "defaultValue": "qm",
+      "defaultValue": "quals",
       "required": "true"
     },
     { "name": "Match #",
@@ -40,12 +40,8 @@ var config_data = `
       "code": "r",
       "type": "robot",
       "choices": {
-        "r1": "Red-1",
-        "b1": "Blue-1<br>",
-        "r2": "Red-2",
-        "b2": "Blue-2<br>",
-        "r3": "Red-3",
-        "b3": "Blue-3"
+        "red": "Red-1",
+        "blue": "Blue-1<br>",
       },
       "required":"true"
     },
@@ -91,19 +87,15 @@ var config_data = `
       "code": "ad",
       "type":"radio",
       "choices": {
-        "d": "Docked (not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "docked": "Docked (not Engaged)<br>",
+        "engaged": "Engaged<br>",
+        "attempted": "Attempted but failed<br>",
+        "not attempted": "Not attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "I forgor"
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer",
-      "code": "tct",
-      "type": "cycle"
-    },
     { "name": "Grid Scoring",
       "code": "tsg",
       "type": "clickable_image",
@@ -141,30 +133,26 @@ var config_data = `
       "code": "fpu",
       "type": "radio",
       "choices": {
-        "o": "Cones<br>",
-        "u": "Cubes<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
+        "cones": "Cones<br>",
+        "cubes": "Cubes<br>",
+        "both": "Both<br>",
+        "not attempted": "Not Attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "I forgor"
     }
   ],
   "endgame": [
-    { "name": "Docking Timer",
-      "code": "dt",
-      "type": "timer"
-    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
-        "d": "Docked (Not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "parked": "Parked<br>",
+        "docked": "Docked (Not Engaged)<br>",
+        "engaged": "Engaged<br>",
+        "attempted": "Attempted but failed<br>",
+        "not attempted": "Not attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "I forgor"
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
@@ -180,24 +168,23 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
+        "not effective": "Not Effective<br>",
+        "average": "Average<br>",
+        "very good": "Very Effective<br>",
+        "I Forgor": "Not Observed"
       },
-      "defaultValue": "x"
+      "defaultValue": "I forgor"
     },
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
+        "below average": "Below Average<br>",
+        "average": "Average<br>",
+        "excellent": "Excellent<br>",
+        "did not defend": "Did not play defense"
       },
-      "defaultValue": "x"
+      "defaultValue": "I forgor"
     },
     { "name": "Swerve drive?",
       "code": "sd",
@@ -207,11 +194,11 @@ var config_data = `
       "code": "sr",
       "type": "radio",
       "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
+        "slow": "1 (slow)<br>",
+        "kind of slow": "2<br>",
+        "average": "3<br>",
+        "kind of fast": "4<br>",
+        "ZOOM": "5 (fast)"
       },
       "defaultValue":"3"
     },
@@ -236,7 +223,7 @@ var config_data = `
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 50
+      "maxSize": 1000
     }
   ]
 }`;
