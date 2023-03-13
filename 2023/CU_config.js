@@ -22,11 +22,11 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "qm": "Quals<br>",
-        "de": "Double Elimination<br>",
-        "f": "Finals"
+        "quals": "Quals<br>",
+        "double": "Double Elimination<br>",
+        "finals": "Finals"
       },
-      "defaultValue": "qm",
+      "defaultValue": "quals",
       "required": "true"
     },
     { "name": "Match #",
