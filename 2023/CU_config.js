@@ -91,9 +91,9 @@ var config_data = `
       "code": "ad",
       "type":"radio",
       "choices": {
-        "docked": "Docked (not Engaged)<br>",
-        "engaged": "Engaged<br>",
-        "attempted": "Attempted but failed<br>",
+        "dock": "Docked (not Engaged)<br>",
+        "engage": "Engaged<br>",
+        "attempt": "Attempted but failed<br>",
         "none": "Not attempted"
       },
       "defaultValue": "none"
