@@ -91,12 +91,12 @@ var config_data = `
       "code": "ad",
       "type":"radio",
       "choices": {
-        "d": "Docked (not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "docked": "Docked (not Engaged)<br>",
+        "engaged": "Engaged<br>",
+        "attempted": "Attempted but failed<br>",
+        "none": "Not attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "none"
     }
   ],
   "teleop": [
@@ -141,12 +141,12 @@ var config_data = `
       "code": "fpu",
       "type": "radio",
       "choices": {
-        "o": "Cones<br>",
-        "u": "Cubes<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
+        "cones": "Cones<br>",
+        "cubes": "Cubes<br>",
+        "both": "Both<br>",
+        "none": "Not Attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "none"
     }
   ],
   "endgame": [
@@ -158,13 +158,13 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
-        "d": "Docked (Not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "parked": "Parked<br>",
+        "docked": "Docked (Not Engaged)<br>",
+        "engaged": "Engaged<br>",
+        "attempted": "Attempted but failed<br>",
+        "none": "Not attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "none"
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
