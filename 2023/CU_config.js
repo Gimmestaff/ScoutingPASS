@@ -18,15 +18,15 @@ var config_data = `
       "required": "true",
       "disabled": "true"
     },
-    { "name": "Match Level",
+    {  "name": "Match Level",
       "code": "l",
       "type": "level",
       "choices": {
-        "quals": "Quals<br>",
-        "double": "Double Elimination<br>",
-        "finals": "Finals"
+        "qm": "Quals<br>",
+        "sf": "Semifinals<br>",
+        "f": "Finals"
       },
-      "defaultValue": "quals",
+      "defaultValue": "qm",
       "required": "true"
     },
     { "name": "Match #",
