@@ -22,9 +22,9 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "quals": "Quals<br>",
-        "double": "double elimination<br>",
-        "finals": "Finals"
+        "qm": "Quals<br>",
+        "de": "double elimination<br>",
+        "f": "Finals"
       },
       "defaultValue": "quals",
       "required": "true"
