@@ -22,11 +22,11 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "qm": "Quals<br>",
-        "de": "double elimination<br>",
-        "f": "Finals"
+        "quals": "Quals<br>",
+        "double": "double elimination<br>",
+        "finals": "Finals"
       },
-      "defaultValue": "qm",
+      "defaultValue": "quals",
       "required": "true"
     },
     { "name": "Match #",
@@ -47,7 +47,7 @@ var config_data = `
         "r3": "Red-3",
         "b3": "Blue-3"
       },
-      "required":"true"
+      "required":"false"
     },
     { "name": "Team #",
       "code": "t",
