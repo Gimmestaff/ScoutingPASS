@@ -47,7 +47,7 @@ var config_data = `
         "r3": "Red-3",
         "b3": "Blue-3"
       },
-      "required":"false"
+      "required":"true"
     },
     { "name": "Team #",
       "code": "t",
