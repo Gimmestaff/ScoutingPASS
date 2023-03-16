@@ -56,6 +56,7 @@ var config_data = `
       "max": 99999
     },
   ],
+  
   "auton": [
     { "name": "Auto Scoring",
       "code": "asg",
